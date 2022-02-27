@@ -1,0 +1,14 @@
+:root {
+    background-color: grey;
+}
+
+/*
+Navbar.
+*/
+.Navbar {
+    color: white;
+    display: flex;
+    top: 0px;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+}
