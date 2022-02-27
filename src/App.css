@@ -1,14 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     background-color: grey;
+    font-family: Roboto;
+    --navitem-not-active: white;
+    --navitem-active: rgb(0, 89, 253);
 }
 
 /*
 Navbar.
 */
 .Navbar {
-    color: white;
     display: flex;
     top: 0px;
     position: sticky;
     position: -webkit-sticky; /* Safari */
+}
+
+#ah {
+    text-decoration: none;
+    color: var(--navitem-active);
+}
+
+.NavLink, .NavLinkActive {
+    text-decoration: none;
+}
+
+.NavLink {
+    color: var(--navitem-not-active);
+}
+
+.NavLinkActive {
+    color: var(--navitem-active);
 }
