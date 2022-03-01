@@ -10,10 +10,10 @@ export const Navbar: React.FC<Props> = () => {
     return (
         <div className='Navbar'>
             <Link to={'/'} id='ah'>AH.</Link>
-            <Navitem text='About' />
-            <Navitem text='Resume' />
-            <Navitem text='Projects' />
-            <Navitem text='Contact' />
+            <Navitem text='about' />
+            <Navitem text='projects' />
+            <Navitem text='resume' />
+            <Navitem text='contact' />
         </div>
     );
 }
