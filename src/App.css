@@ -29,14 +29,6 @@ Navbar.
     padding-bottom: 10px;
 }
 
-#ah {
-    text-decoration: none;
-    color: var(--main-red);
-    margin-right: auto;
-    font-size: 36px;
-    font-weight: 800;
-}
-
 .NavLink, .NavLinkActive {
     text-decoration: none;
     margin-left: 40px;
@@ -89,4 +81,8 @@ Home.
 .typewriter-wrapper {
     display: flex;
     flex-wrap: wrap;
+}
+
+.typewriter-text {
+    color: var(--main-yellow);
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
+import styled from 'styled-components'
 
 interface Props {
 
@@ -18,8 +19,8 @@ export const Home: React.FC<Props> = () => {
             <div className='home-top-left'>
                 <span id='hello'>Hello,</span>
                 <span>I'm Aaron Hanrahan,</span>
-                <div className='typewriter-wrapper'> 
-                    a&nbsp;
+                <TWWrapper> 
+                    <span>a</span>&nbsp;
                     <Typewriter 
                         options={{
                             strings: typewriterStrings,
@@ -30,7 +31,7 @@ export const Home: React.FC<Props> = () => {
                             cursorClassName: 'typewriter-cursor'
                         }}
                     />
-                </div>
+                </TWWrapper>
             </div>
             <div className='home-top-right'>
                 TR
@@ -44,3 +45,8 @@ export const Home: React.FC<Props> = () => {
         </div>
     );
 }
+
+const TWWrapper = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+`;
